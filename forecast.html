@@ -47,6 +47,7 @@
 
     window.onload = function () {
       forecast();
+      console.log('its works');
     };
     async function forecast() {
       try {
@@ -68,19 +69,19 @@
             // Mengisi kartu dengan data
             card.innerHTML = `
             <div class="row m-5 " style="background-color: #87aaa2;border-radius: 30px;min-height: 50px;">
-                <div class="col d-flex justify-content-center" style="font-size:50px;">
+                <div class="col d-flex justify-content-center" style="font-size:25px;">
                     <center>${weekDays[i]}</center>
                 </div>
 
-                <div class="col d-flex justify-content-center" style="font-size:50px;">
+                <div class="col d-flex justify-content-center" style="font-size:25px;">
                     ${data.list[i].main.humidity + "%"}
                 </div>
 
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center" style="font-size:25px;">
                     ${data.list[i].main.temp + "°C" + ` <img src="${url_icon}" alt="${url_alt}" >`}
                 </div>
 
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center" style="font-size:25px;">
                     ${data.list[i].clouds.all + "%" ?? 0}
                 </div>
             </div>
