@@ -82,13 +82,14 @@ img {
     margin-top: 50px;
     gap: 20px;
 }
+
 .col {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.humidity, 
+.humidity,
 .wind,
 .cloud {
     font-size: 20px;
@@ -98,7 +99,7 @@ img {
 #search {
     border: 0;
     outline: 0;
-    background:  white;
+    background: white;
     border-radius: 50%;
     width: 60px;
     aspect-ratio: 1;
@@ -117,21 +118,34 @@ img {
     font-size: 15px;
 }
 
-@media (min-width: 665px) {
-.details {
-    flex-direction: row;
-}
-}
-@media (min-width: 712px) {
-.weather {
-    flex-direction: row;
-    justify-content: space-around;
+#back {
+    border: 0;
+    outline: 0;
+    background-color: rgb(155, 0, 0);
+    border-radius: 25px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
 
-.details {
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
-    gap: 50px;
-}     
+@media (min-width: 665px) {
+    .details {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 712px) {
+    .weather {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        gap: 50px;
+    }
 }
